@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MusicCrawler4Web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+    <description></description>
+    <display-name>showList</display-name>
+    <servlet-name>showList</servlet-name>
+    <servlet-class>org.wuxy.crawler.web.SongsListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showList</servlet-name>
+    <url-pattern>/Index</url-pattern>
+  </servlet-mapping>
+  
+    <jsp-config>
+    <taglib>
+      <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+      <taglib-location>/WEB-INF/c.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+</web-app>
